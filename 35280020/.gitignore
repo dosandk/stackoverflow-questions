@@ -1,0 +1,17 @@
+### PhpStorm ###
+.idea
+
+### Bower ###
+bower_components
+bower.json
+.bowerrc
+
+### Node ###
+node_modules
+*.log
+
+### SASS ###
+*.sass-cache
+
+###  Build dir ###
+#dist

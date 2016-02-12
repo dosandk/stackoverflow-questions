@@ -1,0 +1,24 @@
+{
+  "name": "stackoverflow-questions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dosandk/stackoverflow-questions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dosandk/stackoverflow-questions/issues"
+  },
+  "homepage": "https://github.com/dosandk/stackoverflow-questions#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "raw-loader": "^0.5.1",
+    "webpack": "^1.12.13"
+  }
+}
