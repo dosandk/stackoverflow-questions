@@ -63,3 +63,5 @@ define(
 I'm trying to "soft" move big project from r.js-building to build via "webpack", where this "load"
 plugin used in many places and I don't want change signature of all modules where this plugin was used, I need the some 
 plugin for "webpack" which will be understand the signature of requirejs "load" plugin.
+
+Maybe, somebody tell me how to write similar plugin for "webpack".
