@@ -1,8 +1,12 @@
 #### [Webpack: How can I create a loader for “webpack” which takes an array of dependencies?](http://stackoverflow.com/questions/35280020/webpack-how-can-i-create-a-loader-for-webpack-which-takes-an-array-of-depende) 
 
 #### Run project:
-1. `npm install`
-2. `gulp`
+1. `npm install` - install all project dependencies
+2. `gulp` - run local server and build project via "requirejs"
+
+#### Build:
+1. via require: `gulp build:require` - build passes
+2. via webpack: `gulp build:webpack` - throws error
 
 #### Problem:
 I'm using next "load" plugin for "requirejs":
@@ -46,7 +50,7 @@ define(
     }
 );
 ```
-This "load" plugin allows next thing:
+This "load" plugin allows next thing: it wraps dependencies to one object:
 
 ```javascript
 define(
