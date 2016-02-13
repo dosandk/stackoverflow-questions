@@ -44,6 +44,4 @@ gulp.task('build:webpack', ['clean'], function () {
         .pipe(gulp.dest('dist/js'));
 });
 
-gulp.task('default', ['runLocalServer'], function () {
-    console.error('default');
-});
+gulp.task('default', ['build:require', 'runLocalServer']);
