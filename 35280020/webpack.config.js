@@ -21,7 +21,8 @@ module.exports = {
             jquery: 'app/js/libs/jquery',
             underscore: 'app/js/libs/underscore',
             backbone: 'app/js/libs/backbone',
-            text: 'app/js/libs/text'
+            text: 'app/js/libs/text',
+            load: 'app/js/libs/load'
         }
     },
     resolveLoader: {
