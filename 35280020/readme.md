@@ -1,1 +1,1 @@
-#### Webpack: How can I create a loader for “webpack” which takes an array of dependencies?
+#### [Webpack: How can I create a loader for “webpack” which takes an array of dependencies?](http://stackoverflow.com/questions/35280020/webpack-how-can-i-create-a-loader-for-webpack-which-takes-an-array-of-depende)

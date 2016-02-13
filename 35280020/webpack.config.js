@@ -8,7 +8,7 @@ module.exports = {
     },
     output: {
         path: __dirname + 'dist/js',
-        filename: 'app.js'
+        filename: 'main.js'
     },
     plugins: [
         new webpack.optimize.LimitChunkCountPlugin({
@@ -18,7 +18,7 @@ module.exports = {
     resolve: {
         modulesDirectories: ['./'],
         alias: {
-            jquery: 'app/js//libs/jquery',
+            jquery: 'app/js/libs/jquery',
             underscore: 'app/js/libs/underscore',
             backbone: 'app/js/libs/backbone',
             text: 'app/js/libs/text'
