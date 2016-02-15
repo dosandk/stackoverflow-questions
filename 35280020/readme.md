@@ -1,4 +1,4 @@
-#### [Webpack: How can I create a loader for “webpack” which takes an array of dependencies?](http://stackoverflow.com/questions/35280020/webpack-how-can-i-create-a-loader-for-webpack-which-takes-an-array-of-depende) 
+![](https://raw.githubusercontent.com/dosandk/stackoverflow-questions/master/assets/checkmark-24.png "") [Webpack: How can I create a loader for “webpack” which takes an array of dependencies?](http://stackoverflow.com/questions/35280020/webpack-how-can-i-create-a-loader-for-webpack-which-takes-an-array-of-depende) 
 
 #### Run project:
 1. `npm install` - install all project dependencies
@@ -69,3 +69,5 @@ plugin used in many places and I don't want change signature of all modules wher
 plugin for "webpack" which will be understand the signature of requirejs "load" plugin.
 
 Maybe, somebody tell me how to write similar plugin for "webpack".
+
+#### Solution: [Stackoverflow](http://stackoverflow.com/questions/35280020/webpack-how-can-i-create-a-loader-for-webpack-which-takes-an-array-of-depende/35398818#35398818)
