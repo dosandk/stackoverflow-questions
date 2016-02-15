@@ -2,6 +2,19 @@
 
 var webpack = require('webpack');
 
+var customResolverPlugin = {
+    apply: function (resolver) {
+        resolver.plugin('resolve', function (context, request) {
+            const matchLoadRequest = /^\[(.+)]$/.exec(request.path);
+
+            if (matchLoadRequest) {
+                request.query = '?' + JSON.stringify(matchLoadRequest[1].split(', '));
+                request.path = __filename;
+            }
+        });
+    }
+};
+
 module.exports = {
     entry: {
         app: 'app/js/main.js'
@@ -13,9 +26,15 @@ module.exports = {
     plugins: [
         new webpack.optimize.LimitChunkCountPlugin({
             maxChunks: 1
-        })
+        }),
+        {
+            apply: function (compiler) {
+                compiler.resolvers.normal.apply(customResolverPlugin);
+            }
+        }
     ],
     resolve: {
+        root: __dirname,
         modulesDirectories: ['./'],
         alias: {
             jquery: 'app/js/libs/jquery',
@@ -27,7 +46,8 @@ module.exports = {
     },
     resolveLoader: {
         alias: {
-            text: 'raw-loader'
+            text: 'raw-loader',
+            load: require.resolve('./loadLoader.js')
         }
     }
 };
